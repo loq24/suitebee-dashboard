@@ -1,0 +1,32 @@
+.suitebee-login-page-wrapper{ width: 100%; display: flex; flex-flow: row wrap; min-height: 956px; background: #dddddd;}
+.suitebee-login-page-wrapper *{ font-family: 'Lato', sans-serif; }
+.suitebee-login-page-wrapper > div { width: 50%; display: flex; flex-wrap: wrap;}
+.suitebee-login-page__left{ flex-direction: column; }
+.suitebee-login-page__left > div { width: 100%; height: 50%;}
+.suitebee-login-page__left .logo-area{ background: #000000; position: relative; }
+.suitebee-login-page__left .logo-area #suitebee-logo-big{ background: url(../images/suitebee-logo-big.png) no-repeat; width: 486px; height: 181px; position: absolute; left: 12%; bottom: 57px;}
+.suitebee-login-page__left .tagline-area{ background: #4a4a4a; padding-left: 12%;}
+.suitebee-login-page__left .tagline-area h1{ color: #f6e200; font-size: 47px; font-weight: 400; line-height: 45px; }
+.suitebee-login-page__left .tagline-area p{ font-size: 16px; font-weight: 400; line-height: 24px; color: #FFF; }
+.suitebee-login-page__right{ background: url(../images/login-background-pattern-top.png) no-repeat left top, url(../images/login-backgroun-pattern-bottom.png) no-repeat 120% 102%; padding: 0 12%; flex-direction: column; justify-content: center;}
+.suitebee-login-page__right h2{ color: #131336; font-size: 36px; font-weight: 400; margin-top: 0; margin-bottom: 50px; }
+
+/**
+* Login Form
+*/
+.suitebee-login-page__right form > p{ margin-bottom: 24px; }
+.suitebee-login-page__right input{ font-family: 'Roboto', sans-serif; font-size: 16px; }
+.suitebee-login-page__right #loginform input[type=text], .suitebee-login-page__right #loginform input[type=password]{ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04); border-radius: 8px; border: 1px solid #eaedf3; background-color: #f5f5fb; height: 48px; padding-left: 50px; background-position: 15px 10px;}
+.suitebee-login-page__right #loginform input[type=text]{ background-image: url(../images/user-icon.png); background-repeat: no-repeat; }
+.suitebee-login-page__right #loginform input[type=password]{ background-image: url(../images/lock-icon.png); background-repeat: no-repeat; }
+.suitebee-login-page__right input[type=submit]{ height: 48px; border-radius: 29px; border: 1px solid #979797; background-color: #ffffff; color: #131336; padding: 0; text-align: center; text-transform: capitalize; width: 140px; display: block; margin: 0 auto; outline: none; text-decoration: none; }
+.suitebee-login-page__right #lostpasswordform input[type=submit]{ width: 240px; }
+.suitebee-login-page__right input[type=submit]:hover{ text-decoration: none; }
+.suitebee-login-page__right p:not(.login-remember) label{ display: none; }
+.suitebee-login-page__right .login-remember label{ font-size: 14px; color: #4e4d4d; }
+.suitebee-login-page__right .login-remember input[type=checkbox]{ margin-right: 5px; padding: 8px; border-radius: 4px; outline: none; }
+.suitebee-login-page__right .login-remember input[type=checkbox]::before{ margin: 0; top: 0; left: -1px; outline: none; border: 1px solid #eaedf3; }
+.suitebee-login-page__right .notice{ font-size: 16px; }
+.suitebee-login-page__right .notice.notice-error{ color: red; }
+.suitebee-login-page__right .notice.notice-normal{ color: #4e4d4d; }
+.suitebee-login-page__right .bottom-link{ text-align: center; text-decoration: none; font-size: 13px; color: #4e4d4d; margin-top: 15px; display: block; }

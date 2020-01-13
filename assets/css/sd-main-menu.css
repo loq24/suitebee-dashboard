@@ -1,0 +1,30 @@
+body[class*=toplevel_page_wuapc-page] #wpcontent{background: url(../images/background-pattern-top.png) no-repeat -50px -10px, url(../images/background-pattern-bottom.png) no-repeat right bottom; }
+body[class*=toplevel_page_wuapc-page] #wpbody{padding-top: 90px; padding-left: 30px; padding-right: 30px;}
+body[class*=toplevel_page_wuapc-page] #wpbody h1.wp-heading-inline{text-transform: uppercase;    border-bottom: 2px solid #f8e71c; min-width: 265px; padding-left: 5px;}
+body[class*=toplevel_page_wuapc-page] #wpbody .wpuapc-main-wrap{position: relative; display: flex; flex-flow: row wrap; justify-content: center; padding: 43px 0 0 0;}
+body[class*=toplevel_page_wuapc-page] #wpbody .wpuapc-main-wrap .submenu-block{width: 30.33%; height: 193px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.07); border: 1px solid #ebebeb; background-color: #747474;   display: flex;justify-content: center;align-items: center; margin-bottom: 25px;}
+body[class*=toplevel_page_wuapc-page] #wpbody .wpuapc-main-wrap .submenu-block:nth-child(even){margin: 0 3%;}
+body[class*=toplevel_page_wuapc-page] #wpbody .wpuapc-main-wrap .submenu-block span{color: #ffffff;
+font-size: 17px; text-transform: uppercase; display: block; text-align: center;}
+body[class*=toplevel_page_wuapc-page] #wpbody .wpuapc-main-wrap .submenu-block a{text-decoration: none;}
+body[class*=toplevel_page_wuapc-page] #wpbody .floating-round-btn{width: 75px; height: 75px; box-shadow: 0 6px 10px 4px rgba(0, 0, 0, 0.36); background-color: #f8e71c; position: absolute; right: 60px; bottom: 0; border-radius: 50%;display: flex; justify-content: center; align-items: center;}
+body[class*=toplevel_page_wuapc-page] #wpbody .floating-round-btn .cross-icon{background: url(../images/cross-icon.png) no-repeat center; width: 30px; height: 30px;}
+body[class*=toplevel_page_wuapc-page] #wpbody .wpuapc-main-wrap .submenu-block img{display: block;
+  margin: 0 auto 15px; object-fit: contain;}
+ 
+  
+/**
+* Pages & post admin page
+*/  
+.auto-fold .edit-post-header, .edit-post-layout .editor-post-publish-panel{ top: 88px; }
+
+/**
+* Media Queries
+*/
+@media (min-width: 600px){
+  .edit-post-layout { padding-top: 62px; }
+}
+@media (min-width: 782px){
+  .edit-post-layout.is-sidebar-opened .edit-post-layout__content { padding-top: 56px; }
+  .edit-post-layout.is-sidebar-opened .edit-post-sidebar { top: 144px; }
+}

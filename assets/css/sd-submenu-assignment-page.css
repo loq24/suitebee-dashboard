@@ -1,0 +1,12 @@
+#sd-admin-submenu-assignment-page-main-wrapper{display: flex; flex-flow: row wrap; justify-content: space-between; padding: 20px;}
+#sd-admin-submenu-assignment-page-main-wrapper > .list-group{width: 45%;}
+#sd-admin-submenu-assignment-page-main-wrapper .list-group-item{padding: 17px; background: white;border-radius: 5px; font-size: 14px; margin-bottom: 5px; border: 1px solid #80808061; -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1); -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1); box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);}
+#sd-admin-submenu-assignment-page-main-wrapper .list-group-item span{outline: none; padding: 3px 0;}
+#sd-admin-submenu-assignment-page-main-wrapper .list-group-item span:hover{border-bottom: 1px solid #111;}
+#sd-admin-submenu-assignment-page-main-wrapper .list-group-item > .list-group{ margin-top: 10px; padding: 10px; border: 2px dashed #1111117a; border-radius: 5px; background: #dcdcdc3d; }
+#sd-admin-submenu-assignment-page-main-wrapper .button-area{margin-top: 15px;}
+#sd-admin-submenu-assignment-page-main-wrapper .list-group-item .handle{float: left; width: 16px; height: 16px; cursor: grab; margin-right: 10px;}
+.notification-msg-placeholder.success{padding: 10px; border: 1px solid #80808052; background: azure; border-radius: 5px; max-width: 500px; margin-bottom: 15px;}
+#sd-admin-submenu-assignment-page-main-wrapper .upload_image_button{border: none; background-image: url(../images/upload-icon.png); width: 25px; height: 25px; float: right; background-size: contain; background-repeat: no-repeat; transition: all .8s; outline: none;}
+#sd-admin-submenu-assignment-page-main-wrapper .upload_image_button:hover{cursor: pointer; opacity: .7;}
+#sd-admin-submenu-assignment-page-main-wrapper #wp-admin-pages .upload_image_button{display: none;}
