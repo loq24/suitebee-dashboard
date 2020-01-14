@@ -1,6 +1,6 @@
 /** ADMIN TOP BAR **/
 html.wp-toolbar{padding-top: 82px;}
-#wpadminbar #wp-toolbar{height: auto; overflow: hidden; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 0 21px;}
+#wpadminbar #wp-toolbar{height: auto; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 0 21px;}
 #wpadminbar{height: 52px; padding: 15px 0; border-bottom: 4px solid #f5e500; -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2); -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2); box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2); }
 #wpadminbar li#wp-admin-bar-suitebee-logo > a{height: auto; display: block; transition: opacity .8s;}
 
@@ -11,7 +11,10 @@ html.wp-toolbar{padding-top: 82px;}
 #wpadminbar #wp-admin-bar-my-account{padding-left: 20px;}
 #wpadminbar #wp-admin-bar-my-account.with-avatar>a img{width: 30px; height: 30px;border-radius: 50px;}
 #wpadminbar #wp-admin-bar-my-account span.display-name{text-transform: uppercase; font-size: 12px;}
-
+#wpadminbar #wp-admin-bar-my-account.with-avatar #wp-admin-bar-user-actions>li{ margin: 0; }
+#wpadminbar #wp-admin-bar-my-account.with-avatar #wp-admin-bar-user-actions>li>a{ text-align: center; }
+#wpadminbar #wp-admin-bar-my-account.with-avatar #wp-admin-bar-user-actions>li>a:hover{ color: #f5e500; }
+#wpadminbar .ab-top-secondary .menupop .ab-sub-wrapper{ top: 57px; border-bottom: 4px solid #f5e500; border-right: 4px solid #f5e500; border-left: 4px solid #f5e500; }
 #wpadminbar #suitebee-settings-icon{background: url(../images/settings-icon.png) no-repeat; width: 26px; height: 26px;}
 #wpadminbar #suitebee-notification-icon{background: url(../images/notification-icon.png) no-repeat; width: 26px; height: 26px; margin: 0 20px;}
 #wpadminbar #suitebee-clear-cache-btn{background: url(../images/clear-cache-btn.png) no-repeat center; width: 140px; height: 55px; margin-top: -12px;}
