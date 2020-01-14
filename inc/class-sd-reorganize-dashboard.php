@@ -10,7 +10,7 @@ class SD_Reorganize_Dashboard{
   
   const WUAPC_ADMIN_PAGE_SLUG = 'wuapc-page';
   const DASHBOARD_PAGE = 'index.php';
-  const ALLOWED_DEFAULT_TOOLBAR_ITEMS = ['my-account'];
+  const ALLOWED_DEFAULT_TOOLBAR_ITEMS = ['my-account', 'logout'];
 
   static function do_all_hooks() {
 
