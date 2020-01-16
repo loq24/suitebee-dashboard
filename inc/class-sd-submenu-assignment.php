@@ -90,7 +90,13 @@ class SD_Submenu_Assignment{
 			$wpuapc_admin_pages = self::get_all_wpuapc_admin_pages();
 			$saved_menu_data = self::get_saved_submenu_data();
 
-			foreach($wpuapc_admin_pages as $key => $top_level_admin_page): ?>
+			foreach($wpuapc_admin_pages as $key => $top_level_admin_page): 
+				
+				$wpu_menu_type = get_post_meta($top_level_admin_page->ID, 'wpu_menu_type', true);
+				$wpu_page_to_replace = get_post_meta($top_level_admin_page->ID, 'wpu_page_to_replace', true);
+				if( $wpu_menu_type === 'replace' && $wpu_page_to_replace === 'index.php' ) continue; 
+
+			?>
 				<div class="list-group-item nested-1">
 					<?php echo $top_level_admin_page->post_title; ?>
 					<div
