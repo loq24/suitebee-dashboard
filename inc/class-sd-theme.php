@@ -1,12 +1,12 @@
 <?php 
 /**
- * Reorganize default dashboard 
+ * Apply's Suitebee theme
  */
 
  # Exit if accessed directly
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
-class SD_Reorganize_Dashboard{
+class SD_Theme{
   
   const WUAPC_ADMIN_PAGE_SLUG = 'wuapc-page';
   const DASHBOARD_PAGE = 'index.php';
@@ -137,4 +137,4 @@ class SD_Reorganize_Dashboard{
 
 }
 
-SD_Reorganize_Dashboard::do_all_hooks();
+SD_Theme::do_all_hooks();
