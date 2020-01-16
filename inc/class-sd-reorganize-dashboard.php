@@ -121,7 +121,8 @@ class SD_Reorganize_Dashboard{
   }
 
   /**
-   * IMPORTANT: Temporary function. Should be deleted when moved to live.
+   * IMPORTANT: This might create conflict since the current suitebee-core plugin
+   * has this rule. Please feel free to remove this if the original rule isn't deleted.
    * 
    * Replaces WordPress Howdy text in the admin toolbar
    */
