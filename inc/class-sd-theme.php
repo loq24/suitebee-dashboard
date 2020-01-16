@@ -30,7 +30,8 @@ class SD_Theme{
    */
   static function main_theme_style() {    
 
-      wp_enqueue_style('sd-theme', SD_ASSET_DIR_URL .'/css/sd-theme.css' , false, SD_VERSION);
+    wp_enqueue_style('lato-font', 'https://fonts.googleapis.com/css?family=Lato&display=swap', false, SD_VERSION);
+    wp_enqueue_style('sd-theme', SD_ASSET_DIR_URL .'/css/sd-theme.css' , false, SD_VERSION);
       
   }
 
