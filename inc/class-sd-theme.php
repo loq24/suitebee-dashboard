@@ -30,7 +30,7 @@ class SD_Theme{
    */
   static function main_theme_style() {    
 
-      wp_enqueue_style('sd-dashboard-theme', SD_ASSET_DIR_URL .'/css/sd-dashboard-theme.css' , false, SD_VERSION);
+      wp_enqueue_style('sd-theme', SD_ASSET_DIR_URL .'/css/sd-theme.css' , false, SD_VERSION);
       
   }
 
