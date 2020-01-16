@@ -71,6 +71,8 @@ class SD_Submenu_Assignment{
 
 	/**
 	 * List all available submenus
+	 * 
+	 * @return string All submenus contents
 	 */
 	static function all_available_submenus(){
 		ob_start();
@@ -84,6 +86,8 @@ class SD_Submenu_Assignment{
 
 	/**
 	 * Top level menu data
+	 * 
+	 * @return string WPUAPC generated admin pages list
 	 */
 	static function top_level_menu_data(){
 		ob_start();
@@ -122,6 +126,8 @@ class SD_Submenu_Assignment{
 
 	/**
 	 * Get all WPUAPC generated admin pages
+	 * 
+	 * @return array WPUAPC posts data
 	 */
 	static function get_all_wpuapc_admin_pages(){
 		global $post;
@@ -130,6 +136,8 @@ class SD_Submenu_Assignment{
 
 	/**
 	 * Get saved submenu data
+	 * 
+	 * @return array All saved submenu data
 	 */
 	static function get_saved_submenu_data(){
 		return get_network_option(null, self::SD_SUBMENU_ASSIGNMENT_OPTION_KEY);
@@ -137,6 +145,8 @@ class SD_Submenu_Assignment{
 
 	/**
 	 * Is submenu already in used
+	 * 
+	 * @return boolean
 	 */
 	static function is_submenu_already_in_used($page){
 		$saved_data = self::get_saved_submenu_data();
