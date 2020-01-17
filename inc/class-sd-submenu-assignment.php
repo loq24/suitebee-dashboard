@@ -56,8 +56,8 @@ class SD_Submenu_Assignment{
 	 */
 	static function admin_submenu_assignment_view(){
 		if ( current_user_can( 'manage_options' ) )  {
-			$top_level_menu_data = self::show_top_level_menu_data();
-			$available_submenus = self::show_all_available_submenus();
+			$top_level_menu_data = self::top_level_menu_data();
+			$available_submenus = self::all_available_submenus();
 			require_once( SD_VIEW_DIR_PATH . '/submenu-assignment/submenu-assignment.php');
 		}
 	}
@@ -71,8 +71,10 @@ class SD_Submenu_Assignment{
 
 	/**
 	 * List all available submenus
+	 * 
+	 * @return string All submenus contents
 	 */
-	static function show_all_available_submenus(){
+	static function all_available_submenus(){
 		ob_start();
 			global $menu;
 			foreach($menu as $key => $menu_item){ 
@@ -84,13 +86,21 @@ class SD_Submenu_Assignment{
 
 	/**
 	 * Top level menu data
+	 * 
+	 * @return string WPUAPC generated admin pages list
 	 */
-	static function show_top_level_menu_data(){
+	static function top_level_menu_data(){
 		ob_start();
 			$wpuapc_admin_pages = self::get_all_wpuapc_admin_pages();
 			$saved_menu_data = self::get_saved_submenu_data();
 
-			foreach($wpuapc_admin_pages as $key => $top_level_admin_page): ?>
+			foreach($wpuapc_admin_pages as $key => $top_level_admin_page): 
+				
+				$wpu_menu_type = get_post_meta($top_level_admin_page->ID, 'wpu_menu_type', true);
+				$wpu_page_to_replace = get_post_meta($top_level_admin_page->ID, 'wpu_page_to_replace', true);
+				if( $wpu_menu_type === 'replace' && $wpu_page_to_replace === 'index.php' ) continue; 
+
+			?>
 				<div class="list-group-item nested-1">
 					<?php echo $top_level_admin_page->post_title; ?>
 					<div
@@ -116,6 +126,8 @@ class SD_Submenu_Assignment{
 
 	/**
 	 * Get all WPUAPC generated admin pages
+	 * 
+	 * @return array WPUAPC posts data
 	 */
 	static function get_all_wpuapc_admin_pages(){
 		global $post;
@@ -124,6 +136,8 @@ class SD_Submenu_Assignment{
 
 	/**
 	 * Get saved submenu data
+	 * 
+	 * @return array All saved submenu data
 	 */
 	static function get_saved_submenu_data(){
 		return get_network_option(null, self::SD_SUBMENU_ASSIGNMENT_OPTION_KEY);
@@ -131,6 +145,8 @@ class SD_Submenu_Assignment{
 
 	/**
 	 * Is submenu already in used
+	 * 
+	 * @return boolean
 	 */
 	static function is_submenu_already_in_used($page){
 		$saved_data = self::get_saved_submenu_data();

@@ -1,12 +1,12 @@
 <?php 
 /**
- * Reorganize default dashboard 
+ * Apply's Suitebee theme
  */
 
  # Exit if accessed directly
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
-class SD_Reorganize_Dashboard{
+class SD_Theme{
   
   const WUAPC_ADMIN_PAGE_SLUG = 'wuapc-page';
   const DASHBOARD_PAGE = 'index.php';
@@ -30,7 +30,8 @@ class SD_Reorganize_Dashboard{
    */
   static function main_theme_style() {    
 
-      wp_enqueue_style('sd-dashboard-theme', SD_ASSET_DIR_URL .'/css/sd-dashboard-theme.css' , false, SD_VERSION);
+    wp_enqueue_style('lato-font', 'https://fonts.googleapis.com/css?family=Lato&display=swap', false, SD_VERSION);
+    wp_enqueue_style('sd-theme', SD_ASSET_DIR_URL .'/css/sd-theme.css' , false, SD_VERSION);
       
   }
 
@@ -121,7 +122,8 @@ class SD_Reorganize_Dashboard{
   }
 
   /**
-   * IMPORTANT: Temporary function. Should be deleted when moved to live.
+   * IMPORTANT: This might create conflict since the current suitebee-core plugin
+   * has this rule. Please feel free to remove this if the original rule isn't deleted.
    * 
    * Replaces WordPress Howdy text in the admin toolbar
    */
@@ -136,4 +138,4 @@ class SD_Reorganize_Dashboard{
 
 }
 
-SD_Reorganize_Dashboard::do_all_hooks();
+SD_Theme::do_all_hooks();

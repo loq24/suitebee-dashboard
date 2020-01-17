@@ -26,7 +26,8 @@ define( 'SD_ASSET_DIR_URL', plugin_dir_url( __FILE__ ) . 'assets' );
 /**
  * Require plugin core classes
  */
-require( dirname(__FILE__) . '/inc/class-sd-reorganize-dashboard.php' );
+require( dirname(__FILE__) . '/inc/class-sd-theme.php' );
+require( dirname(__FILE__) . '/inc/class-sd-dashboard.php' );
 require( dirname(__FILE__) . '/inc/class-sd-main-menu.php' );
 require( dirname(__FILE__) . '/inc/class-sd-submenu-assignment.php' );
 require( dirname(__FILE__) . '/inc/class-sd-login-page.php' );
