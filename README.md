@@ -1,13 +1,13 @@
-<h1 align="left">
+<h1 align="center">
   Suitebee Dashboard
 </h1>
 
-<p align="left">
+<p align="center">
   TheWoo's dashboard theme.
 </p>
 
-<p align="left">
-  <img src="/assets/images/suitebee-logo-big.png" />
+<p align="center">
+  <img src="/assets/images/suitebee-logo-wout-tagline.png" />
 </p>
 
 ## Installation
